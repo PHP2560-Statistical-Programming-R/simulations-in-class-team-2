@@ -246,7 +246,7 @@ c. Peform steps 1:2 at least 1000 times over until you have a vector of your sta
 d. The lower bound of a 95% CI will be the 0.025 percentile
 e. The upper bound of a 95% CI will be the 0.975 percentile
 
-Make a function called `boot_ci` which calculates the 95% confidence interval in this manner. 
+Make a function called `boot_ci` which calculates the 95% confidence interval in this manner.
 
 ```{r}
 boot_ci = function(data, stat=mean, reps=1000, conf = c(.025, .975)){
