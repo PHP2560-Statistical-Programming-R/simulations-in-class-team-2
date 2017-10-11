@@ -260,7 +260,16 @@ boot_ci = function(data, stat=mean, reps=1000, conf = c(.025, .975)){
 ```
 
 5. For problems 3b and 3c, you calculated a mean value. Because you saved these final results in a vector, use the bootstrap to estimate the variance of the return in each case for your final answer. Once you have these results, which game has the smaller variance in returns?
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+```{r}
+
+```
+=======
+>>>>>>> 68e2e54c85a1ddf7f82b0bd5931c9387e6138c76
 ```{r}
 #Our fair prob for 3b was .491
 boot_ci(data=replicate(100, MC.bankroll(100, 0.491, 0.01, 100000)),stat=var)
@@ -270,3 +279,4 @@ boot_ci(data=replicate(100, MC.bankroll(100, 0.48, 0.015, 100000)),stat=var)
 ```
 Based on these results, the game from 3b (which uses .491 as a starting probability and a 1% increment) has the smaller variance in returns.
 
+>>>>>>> e96c8762bedd090527dfc783e7e9ad9acd223b02
